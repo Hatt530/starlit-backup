@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About</title>
+    <script src="scripts.js"></script>
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- jQuery & Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+   <!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+
+
+
+<script type="text/javascript">
+    $(window).load(function() {
+        $(".carousel .item").each(function() {
+            var i = $(this).next();
+            i.length || (i = $(this).siblings(":first")),
+            i.children(":first-child").clone().appendTo($(this));
+
+            for (var n = 0; n < 4; n++)(i = i.next()).length ||
+            (i = $(this).siblings(":first")),
+            i.children(":first-child").clone().appendTo($(this))
+        })
+    });
+</script>
+</head>
+
+<body class="about">
+
+    <!-- Top Bar 
+    <div class="top-bar">
+        <div class="container">
+            <span>Location: 4 Westminister Rd, Kingston 10, Jamaica | Phone: 876-221-5430 | Email: starlitlightingdistributors@gmail.com</span>
+            <a href="https://wa.me/18768686780" target="_blank">WhatsApp Us</a>
+        </div>
+    </div>-->
+
+    <!-- Header -->
+    <header>
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container">
+            <!-- Logo & Name on the Left -->
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.jpeg" alt="Starlit Distributors Logo">
+                Starlit Distributors
+            </a>
+
+            <!-- Hamburger Menu for Mobile -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacts.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <!-- About Us Section -->
+    <section class="content py-5">
+        <div class="container ">
+            <h1 class="text-center" style="padding-bottom: 40px;">
+            About Us</h1>
+            <h2>Who We Are</h2>
+            <p>Starlit Distributors is dedicated to providing high-quality products and reliable solutions for businesses and homes. We pride ourselves on excellent customer service and a diverse product range, ensuring that our clients always find exactly what they need. Whether it's tools, furniture, medical supplies, or cleaning equipment, we offer top-of-the-line products that stand the test of time.</p>
+
+            <h3>Our Journey</h3>
+            <p>We started in 2018, supplying high-quality furniture to customers in the Kingston area. As our reputation for quality grew, so did our product range, which now includes everything from industrial equipment to household essentials. Our commitment to providing affordable, durable, and dependable products led us to begin supplying local businesses, government entities, and large corporations in 2023. We now aim to be a one-stop solution for businesses and homes looking for top-notch products at competitive prices.</p>
+
+            <h3>Our Commitment to Quality</h3>
+            <p>At Starlit Distributors, we understand the importance of quality. That's why we only work with trusted manufacturers who share our dedication to producing reliable products. Each item we offer undergoes stringent quality control checks to ensure that it meets the highest standards. Our team is passionate about offering products that not only meet customer expectations but exceed them, ensuring that every purchase is a worthwhile investment.</p>
+
+            <h3>Mission Statement</h3>
+            <p>Our mission is to provide high-quality products at reasonable prices while ensuring unmatched customer satisfaction. We aim to be a trusted partner for businesses and individuals, offering a seamless sourcing experience for a variety of needs. Our dedication to continuous improvement and exceptional customer service has earned us the trust and loyalty of many clients across different industries.</p>
+
+            <h3>Future Vision</h3>
+            <p>As we continue to grow, our goal is to expand our product line further, embracing innovation and sustainability. We aim to become a leading name in the distribution industry, known for quality, affordability, and outstanding service. Our customers’ evolving needs drive us to adapt, improve, and offer even better solutions.</p>
+
+            
+
+
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p>&copy; 2025 Starlit Distributors. All rights reserved.</p>
+        </div>
+    </footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>

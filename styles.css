@@ -1,0 +1,270 @@
+
+.extrapadding{
+    padding-bottom: 40px;
+}
+.about-us{
+
+    padding-left: 290px;
+    padding-right: 290px;
+}
+
+.footer-sticky {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* --- Top Bar Styling 
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    color: white;
+    font-size: 14px;
+    padding: 8px 0;
+    text-align: center;
+    z-index: 1050; /* Higher than navbar 
+}
+
+.top-bar a {
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.top-bar a:hover {
+    text-decoration: underline;
+}  --- */
+
+/* --- Navbar Styling --- */
+.navbar {
+    background-color: #FFFFFF !important;
+    padding: 15px 20px;
+    border-bottom: 3px solid #FFD700;
+}
+
+.navbar-brand img {
+    max-height: 60px;
+    width: auto;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: black !important;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;  
+    transition: color 0.3s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #FFD700 !important;
+}
+
+/* --- Navbar Adjustments --- */
+.custom-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+
+/* --- Bounce Effect on Scroll --- */
+.scrolled {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Align Logo & Name to the Left, Menu to the Right */
+.custom-navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo & Name Styling */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar-brand img {
+    max-height: 50px;
+    margin-right: 10px;
+}
+
+/* Navbar Links */
+.navbar-nav {
+    margin-left: auto;
+}
+
+/* --- Fix for Mobile Navbar --- */
+@media (max-width: 991px) {
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='black' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+        filter: none !important;
+    }
+
+    .navbar-toggler {
+        border: none !important;
+        background-color: transparent !important;
+        outline: none !important;
+        margin-left: auto;
+    }
+
+    .navbar-collapse {
+        background-color: #FFFFFF !important;
+    }
+
+    .navbar-brand {
+        margin: 0 auto;
+        justify-content: center;
+        display: flex;
+        flex-grow: 1;
+    }
+
+    
+}
+
+body {
+    padding-top: 80px; /* top-bar height + navbar height */
+}
+
+/* ✅ Ensure Only #mainCarousel is Full Width */
+#mainCarousel {
+    width: 100vw !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    position: relative;
+}
+
+/* ✅ Ensure images inside #mainCarousel fill the screen */
+#mainCarousel .carousel-item img {
+    width: 100vw !important;
+    max-width: 100% !important;
+    height: auto;
+    object-fit: cover !important;
+    display: block !important;
+}
+
+/* ✅ Adjust Carousel Height for Different Screens */
+@media (min-width: 768px) { /* Large screens */
+    #mainCarousel .carousel-item img {
+        height: 600px;
+    }
+
+    .about-us{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+    
+}
+
+@media (max-width: 390px) { /* Mobile screens */
+    #mainCarousel .carousel-item img {
+        height: 400px;
+
+}
+
+ .about-us{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+}
+
+/* ✅ Keep All Other Content Inside Normal Width */
+.container {
+    max-width: 1140px;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    margin: 0 auto;
+}
+
+/* ✅ Ensure Other Carousels Behave Normally */
+.carousel:not(#mainCarousel) {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+@media (max-width: 390px) {
+    /*.top-bar {
+        font-size: 12px;
+        padding: 6px 0;
+    }*/
+
+    /* --- Navbar Adjustments --- */
+.custom-navbar {
+    padding-top: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+    body {
+        padding-top: 120px;
+    }
+/*all about-us classes pad the about us section on left and right to make it look better*/
+     .about-us{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+/*@media (min-width: 391px) and (max-width: 1024px) {  
+    /* .top-bar {
+        font-size: 13px; () Slightly larger than iPhone 12 )
+        padding: 7px 0; (Adjust padding) }*/
+    
+
+   /* .custom-navbar {
+        position: sticky;
+        /*top: 65px;  Adjusted based on top-bar height */
+        /*left: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: #FFFFFF;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 12px 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    body {
+        padding-top: 90px; /* Adjust so content isn't hidden */
+    /*}
+}*/
+
+}
+
+
+
