@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacts</title>
+    <script src="scripts.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body class="contacts">
+    <!-- Top Bar 
+    <div class="top-bar">
+        <div class="container">
+            <span>Location: 4 Westminister Rd, Kingston 10, Jamaica | Phone: 876-221-5430 | Email: starlitlightingdistributors@gmail.com</span>
+            <a href="https://wa.me/18768686780" target="_blank">WhatsApp Us</a>
+        </div>
+    </div>-->
+
+    <!-- Header -->
+    <header>
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container">
+            <!-- Logo & Name on the Left -->
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.jpeg" alt="Starlit Distributors Logo">
+                Starlit Distributors
+            </a>
+
+            <!-- Hamburger Menu for Mobile -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacts.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <!-- Contact Form Section -->
+    <section class="content py-5 " >
+        <div class="container extrapadding" >
+            <h2>Get in Touch</h2>
+            <p>We'd love to hear from you! Please use the form below to reach out with any inquiries or feedback.</p>
+            
+            <p>
+                <strong><img src="addi.png" alt="address" width="35" height="35"></strong> <a href="https://maps.google.com/?q=4 Westminister Rd, Kingston 10, Jamaica" target="_blank">View on Google Maps</a>
+            </p>
+            <p>
+                <strong><img src="phone.png" alt="phone icon" width="30" height="30"></strong> 
+                <a href="tel:+18768686780">+1 876-221-5430 </a>
+            </p>
+            <p>
+                <strong><img src="wapp.jpeg" alt="what's app icon" width="40" height="40"></strong>
+                <a href="https://wa.me/18768686780" target="_blank">Chat on What's App</a>
+            </p>
+
+            <!-- Contact Form -->
+            <form action="https://formspree.io/f/xpwqrkvy" method="POST" id="contactForm" style="padding-bottom: 50px;">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p>&copy; 2025 Starlit Distributors. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+<script src="scripts.js"></script>
+</body>
+</html>
